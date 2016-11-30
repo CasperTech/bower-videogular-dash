@@ -55,7 +55,7 @@ angular.module("com.2fdevs.videogular.plugins.dash", [])
                                        if (angular.isFunction(dashjs && dashjs.MediaPlayer)) {
                                            // dash.js version 2.x
                                            player = dashjs.MediaPlayer().create();
-                                           player.initialize(API.mediaElement[0], url, API.autoPlay);
+                                           player.initialize(API.mediaElement[0], url, (API.autoPlay!==undefined)?API.autoPlay:false);
                                            if (attr['dashSilence'] && attr['dashSilence'] != "false") {
                                                player.getDebug().setLogToBrowserConsole(false);
                                            }

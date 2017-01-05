@@ -3,7 +3,7 @@
 	"version": "1.4.4",
 	"main": "index.js",
 	"dependencies": {
-		"videogular": "~1.4.4"
+		"videogular": "git+https://github.com/CasperTech/bower-videogular.git"
 	},
 	"devDependencies": {
 		"grunt": "~0.4.1",
